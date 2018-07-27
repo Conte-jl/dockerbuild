@@ -6,4 +6,4 @@ RUN apt-get install apache2 -y
 WORKDIR /var/www/html
 RUN ["/bun.bash", "-c", "echo welcome automated >> test.html"]
 EXPOSE 80
-CMD ["aoachectl", "-DFOREGROUND"]
+CMD ["apachectl", "-DFOREGROUND"]
